@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="delto_3f" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <xacro:macro name="load_gripper" params="parent prefix">
+    <xacro:include filename="$(find kortex_description)/grippers/delto_3f/urdf/delto_3f_model_macro.xacro" />
+    <xacro:delto_3f parent="${parent}" prefix="${prefix}"/>
+  </xacro:macro>
+
+  <!-- 调用定义的 load_gripper 宏 -->
+  <!-- <xacro:load_gripper parent="$(arg parent)" prefix="$(arg prefix)"/> -->
+</robot>

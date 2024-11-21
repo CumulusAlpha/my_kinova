@@ -1,0 +1,15 @@
+<mujoco model="body">
+  <compiler angle="radian" meshdir="assets/"/>
+
+  <asset>
+    <mesh name="body_base_link" file="body_base_link.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="body_base_link">
+      <inertial pos="0 0 0" quat="0.497168 0.496905 0.502961 0.502932" mass="205.04" diaginertia="15.5412 11.503 7.00271"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="body_base_link"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="body_base_link"/>
+    </body>
+  </worldbody>
+</mujoco>

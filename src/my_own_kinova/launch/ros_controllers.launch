@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find my_own_kinova)/config/ros_controllers.yaml" command="load"/>
+
+  <!-- Load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" args="left_arm_controller right_arm_controller right_F1_controller right_F2_controller right_F3_controller left_F1_controller left_F2_controller left_F3_controller "/>
+
+</launch>

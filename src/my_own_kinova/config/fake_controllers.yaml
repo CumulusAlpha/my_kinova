@@ -1,0 +1,100 @@
+controller_list:
+  - name: fake_left_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_joint_1
+      - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - left_joint_7
+  - name: fake_right_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
+      - right_joint_4
+      - right_joint_5
+      - right_joint_6
+      - right_joint_7
+  - name: fake_right_F1_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_F1M1
+      - right_F1M2
+      - right_F1M3
+      - right_F1M4
+  - name: fake_right_F2_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_F2M1
+      - right_F2M2
+      - right_F2M3
+      - right_F2M4
+  - name: fake_right_F3_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_F3M1
+      - right_F3M2
+      - right_F3M3
+      - right_F3M4
+  - name: fake_left_F1_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_F1M1
+      - left_F1M2
+      - left_F1M3
+      - left_F1M4
+  - name: fake_left_F2_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_F2M1
+      - left_F2M2
+      - left_F2M3
+      - left_F2M4
+  - name: fake_left_F3_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_F3M1
+      - left_F3M2
+      - left_F3M3
+      - left_F3M4
+  - name: fake_left_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_F1M1
+      - left_F1M2
+      - left_F1M3
+      - left_F1M4
+      - left_F2M1
+      - left_F2M2
+      - left_F2M3
+      - left_F2M4
+      - left_F3M1
+      - left_F3M2
+      - left_F3M3
+      - left_F3M4
+  - name: fake_right_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_F1M1
+      - right_F1M2
+      - right_F1M3
+      - right_F1M4
+      - right_F2M1
+      - right_F2M2
+      - right_F2M3
+      - right_F2M4
+      - right_F3M1
+      - right_F3M2
+      - right_F3M3
+      - right_F3M4
+initial:  # Define initial robot poses per group
+  - group: left_arm
+    pose: Home
+  - group: left_hand
+    pose: Open
+  - group: right_hand
+    pose: Open

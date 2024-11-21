@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kortex_description
+    relative_path: multiple_robots/output.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/dual_robot.srdf
+  CONFIG:
+    author_name: CumulusAlpha
+    author_email: 1732592058@qq.com
+    generated_timestamp: 1731745975

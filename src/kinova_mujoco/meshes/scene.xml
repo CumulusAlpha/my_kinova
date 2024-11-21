@@ -1,0 +1,44 @@
+<mujoco model="kinova_scene">
+  <compiler angle="radian"/>
+  <option integrator="implicitfast" impratio="10" timestep = "0.002" cone="elliptic" solver="PGS"/>
+<!--  <option>-->
+<!--    <flag multiccd="enable"/>-->
+<!--  </option>-->
+  <statistic center="0 0 0" extent="3"/>
+
+
+
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+      markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <mesh name="base_link" file="base_link.STL" />
+    <mesh name="shoulder_link" file="shoulder_link.STL" />
+    <mesh name="half_arm_1_link" file="half_arm_1_link.STL" />
+    <mesh name="half_arm_2_link" file="half_arm_2_link.STL" />
+    <mesh name="forearm_link" file="forearm_link.STL" />
+    <mesh name="spherical_wrist_1_link" file="spherical_wrist_1_link.STL" />
+    <mesh name="spherical_wrist_2_link" file="spherical_wrist_2_link.STL" />
+    <mesh name="bracelet_with_vision_link" file="bracelet_with_vision_link.STL" />
+    <mesh name="delto_base_link" file="delto_base_link.stl" />
+    <mesh name="link_01" file="link_01.stl" />
+    <mesh name="link_02" file="link_02.stl" />
+    <mesh name="link_03" file="link_03.stl" />
+    <mesh name="link_04" file="link_04.stl" />
+    <mesh name="link_tip_high" file="link_tip_high.stl" />
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+
+    <geom name="body" size="0.25 0.25 1.7" type="box" rgba="0.5 0.5 0.5 1"/>
+    
+    <include file="dual_with_actuators.xml"/>
+
+  </worldbody>
+
+</mujoco>
