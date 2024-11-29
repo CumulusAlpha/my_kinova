@@ -1,4 +1,4 @@
-# Getting Started
+# # Getting Started (Chinese Version)
 
 你好！这是关于大模型规划相关的代码，为了确保代码能够正常运行，请按照以下步骤操作：
 
@@ -67,10 +67,11 @@ rosrun kinova_mujoco mujoco_behaviortree
 
 ---
 
-通过上述步骤，你应该能够成功运行项目代码和示例。若有任何问题，请随时联系！
-English Version
+通过上述步骤，你应该能够成功运行项目代码和示例。若有任何问题，请随时联系
+
+
 ---
-# Compilation
+# Getting Started (English Version)
 
 Hello, this is the code I developed related to large model planning. To ensure it runs correctly, please follow the steps below:
 
